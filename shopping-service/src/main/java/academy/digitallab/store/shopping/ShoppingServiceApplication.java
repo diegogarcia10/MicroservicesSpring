@@ -14,7 +14,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
-@EnableCircuitBreaker
 public class ShoppingServiceApplication {
 
 	public static void main(String[] args) {
