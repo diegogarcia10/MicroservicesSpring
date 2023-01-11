@@ -19,7 +19,7 @@ spring:
         locator:
           enabled: true
           lowerCaseServiceId: true
-      routers:
+      routes:
         - id: CUSTOMER-SERVICE
           uri: lb://CUSTOMER-SERVICE/
           predicates:
