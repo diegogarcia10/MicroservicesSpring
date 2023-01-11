@@ -10,12 +10,13 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 
-spring:
+ spring:
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
+          lowerCaseServiceId: true
       routers:
         - id: customer-service
           uri: lb://customer-service
