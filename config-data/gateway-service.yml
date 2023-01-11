@@ -20,15 +20,15 @@ spring:
           enabled: true
           lowerCaseServiceId: true
       routers:
-        - id: customer-service
+        - id: CUSTOMER-SERVICE
           uri: lb://CUSTOMER-SERVICE/
           predicates:
             - Path=/customers/**
-        - id: product-service
+        - id: PRODUCT-SERVICE
           uri: lb://PRODUCT-SERVICE/
           predicates:
             - Path=/products/**
-        - id: shopping-service
+        - id: SHOPPING-SERVICE
           uri: lb://SHOPPING-SERVICE/
           predicates:
             - Path=/invoices/**
